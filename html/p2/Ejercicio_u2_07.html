@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Juan Diego Reyes Fraga
+    materia: Programación WebI
+    Fecha:
+    Descripción:
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 02-Ejercicio 07</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Juan Diego Reyes Fraga">
+        <meta name="revised" content="">
+        <meta name="description" content="">
+        <style>
+            p{color: lime; background-color: black;}
+            .moverX:hover{transform: translateX(10px);}
+            .moverY:hover{transform: translateY(10px);}
+            .moverXY:hover{transform: translate(20px,5px);}
+            .rotarX:hover{transform: rotateX(180deg);}
+            .rotarY:hover{transform: rotateY(180deg);}
+            .rotarZ:hover{transform: rotateZ(10deg);}
+            .escalaX:hover{transform: scaleX(1.5);}
+            .escalaY:hover{transform: scaleY(1.5);}
+            .escalaXY:hover{transform: scale(1.5,1.5);}
+            .barridoX:hover{transform: skewX(10deg);}
+            .barridoY:hover{transform: skewY(10deg);}
+            .barridoXY:hover{transform: skew(10deg, 10deg);}
+            .matrix_1:hover{transform: scaleY(1.5); transform: translateX(10px);}
+            .matrix_2:hover{transform: matrix(2,0,0,2,200,0);}
+            .Efecto:hover{height: 75%; font-size: 75%; transition: height 0.5s, font-size 0.5s;}
+            .efecto_1{height: 125%; font-size: 125%;}
+            .rainbow{height: 100px; width: 100px;
+            animation-name: rgb;animation-duration: 2.5s;
+            animation-timing-function: ease-in; animation-iteration-count: 3;}
+            .arcoiris{height: 100px; width: 100px;
+            animation-name: rgb;animation-duration: 2.5s;
+            animation-timing-function: linear; animation-iteration-count: 3;}
+                @keyframes rgb {
+                    0%{background-color :green;}
+                    16%{background-color :yellow;}
+                    33%{background-color :orange;}
+                    50%{background-color :red;}
+                    67%{background-color :purple;}
+                    82%{background-color :blue;}
+                    100%{background-color :green;}
+            }
+            .BarradeProgreso{height: 25px;width: 1000px; background-color: grey;
+            color: black; font-size: 125%; font-weight: bold; text-align: center;text-transform:uppercase ;
+            animation-name: Progreso; animation-duration: 10s; animation-delay: 5s;animation-direction:reverse ;}
+            @keyframes Progreso{
+                0%{background-color: white;}
+                33%{background-color:crimson;}
+                66%{background-color: gold;}
+                100%{background-color: darkgreen;}
+            }
+        </style>
+    </head>
+    <body>
+        <Hgroup>
+            <H1> Efectos CSS</H1>
+            <h2>Translate</h2>
+            <p>UPSLP(Sin efecto)</p>
+            <p class="moverX">UPSLP(Mover en X)</p>
+            <p class="moverY">UPSLP(Mover en Y)</p>
+            <p class="moverXY">UPSLP(Mover en X, Y)</p>
+        </Hgroup>
+        <hgroup>
+            <h2>Rotar</h2>
+            <p>UPSLP(Sin efecto)</p>
+            <p class="rotarX">UPSLP(Rotar en X)</p>
+            <p class="rotarY">UPSLP(Rotar en Y)</p>
+            <p class="rotarZ">UPSLP(Rotar en Z)</p>
+        </hgroup>
+        <hgroup>
+            <h2>Escale</h2>
+            <p>UPSLP(Sin efecto)</p>
+            <p class="escalaX">UPSLP(Escalar en X)</p>
+            <p class="escalaY">UPSLP(Escalar en Y)</p>
+            <p class="escalaXY">UPSLP(Escalar en X,Y)</p>
+        </hgroup>
+        <hgroup>
+            <h2>Skew</h2>
+            <p>UPSLP(Sin efecto)</p>
+            <p class="barridoX">UPSLP(Barrido en X)</p>
+            <p class="barridoY">UPSLP(Barrido en Y)</p>
+            <p class="barridoXY">UPSLP(Barrido en X,Y)</p>
+        </hgroup>
+        <hgroup>
+            <h2>Matrix</h2>
+            <p>UPSLP(Sin efecto)</p>
+            <p class="matrix_1">UPSLP(Mover y Escalar)</p>
+            <p class="matrix_2">UPSLP(Mover y Escalar)</p>
+        </hgroup>
+        <hgroup>
+            <h2>Transition</h2>
+            <p>UPSLP(Sin efecto)</p>
+            <p class="efecto_1">UPSLP(Con efecto)</p>
+        </hgroup>
+        <hgroup>
+            <h2>.........</h2>
+            <div class="Efecto"><a href="#" style="text-decoration: none;">Menú 1</a></div>
+            <div class="Efecto"><a href="#" style="text-decoration: none;">Menú 2</a></div>
+            <div class="Efecto"><a href="#" style="text-decoration: none;">Menú 3</a></div>
+            <div class="Efecto"><a href="#" style="text-decoration: none;">Menú 4</a></div>
+            <div class="Efecto"><a href="#" style="text-decoration: none;">Menú 5</a></div>
+        </hgroup>
+        <hgroup>
+            <h2>Animation</h2>
+            <div class="rainbow" style="color: white;">suavisado</div>
+            <div class="arcoiris" style="color:white;">Normal</div>
+            <div class="BarradeProgreso">Tiempo Restante</div>
+        </hgroup>
+    </body>
+
+</html>
