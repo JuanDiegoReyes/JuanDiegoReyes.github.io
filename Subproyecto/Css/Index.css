@@ -1,0 +1,47 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+body{
+    text-align: center;
+    padding: .5px;
+    background-color: darkkhaki;
+}
+.Navbar{
+    width: 99%;
+    padding: 10px;
+    text-align: right;
+    text-decoration: none;
+    background-color: darkslategrey;
+    border-radius: 20px;
+ }
+ .Navbar a{
+    border:black;
+    text-decoration: none;
+    color: bisque;
+    margin: 0 10px;
+    font-family: 'Courgette', cursive;
+}
+ .Navbar a:hover{
+    height: 120%; 
+    font-size: 125%;
+    transition: height 0.5s, font-size 0.5s;
+}
+.Contfondo{
+    background-color: dodgerblue;
+    text-align: center;
+    border-radius:8px;
+    margin: 50px 30px;
+}
+#content{
+    background-color: lightgreen;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 30px;
+}
+footer{
+    color: bisque;
+    font-family: 'Courgette', cursive;
+    border-radius: 5px;
+    width: 99%;
+    background-color: darkolivegreen;
+}
